@@ -5,31 +5,30 @@ enum type { BAR, BUTTON, POPCORN, GUM, SNICKERS, BOUNTY, MILKYWAY };
 
 class Candy
 {
-private:
-    type candytype;
-    string name;
-    int amount;
-    float mass;
-    float price;
+    private:
+        type candytype;
+        string name;
+        int amount;
+        float mass;
+        float price;
 
-public:
+    public:
 
-    Candy();
-    Candy(string name, float mass, int amount, float price, type candytype);
-    ~Candy();
+        Candy();
+        Candy(string name, float mass, int amount, float price, type candytype);
+        ~Candy();
+    
+        string get_name();
 
+        float get_mass();
 
+        int get_amount();
 
-    string get_name();
+        float get_price();
 
-    float get_mass();
+        void ate();
 
-    int get_amount();
-
-    float get_price();
-
-    void ate();
-
-    void print();
-    string gettypeName();
+        void print();
+    
+        string gettypeName();
 };
