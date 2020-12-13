@@ -3,9 +3,9 @@
 
 Candy::Candy() {}
 
-Candy::Candy(string name, float mass, int amount, float price, type candytype)
+Candy::Candy(string name, float mass, int amount, float price, type candyType)
 {
-    this->candytype = candytype;
+    this->candyType = candyType;
     this->name = name;
     this->mass = mass;
     this->amount = amount;
