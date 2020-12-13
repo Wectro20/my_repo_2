@@ -7,7 +7,7 @@ private:
     int day;
     float time;
     int lengh;
-    Candy* arrayofcandy;
+    Candy* arrayOfCandy;
 
 public:
 
