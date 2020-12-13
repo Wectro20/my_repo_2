@@ -15,8 +15,8 @@ public:
     Dinner(int day, float time, int l);
     ~Dinner();
 
-    void findthemostexpensivecandies(string name);
-    void initcandysinarray(Candy candy, int i);
-    Candy getfromarraycandy(int i);
+    void findThemostExpensiveCandies(string name);
+    void initCandysInArray(Candy candy, int i);
+    Candy getFromArrayCandy(int i);
 
 };
