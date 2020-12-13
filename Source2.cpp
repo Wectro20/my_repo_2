@@ -39,7 +39,7 @@ void Candy::print() {
     std::cout << "\nmass" << mass << std::endl;
     std::cout << "\namount " << amount << std::endl;
     std::cout << "\nprice " << price << std::endl;
-    std::cout << "\ntype " << gettypeName();
+    std::cout << "\ntype " << getTypeName();
 }
 string Candy::gettypeName() {
     switch (candyType) {
