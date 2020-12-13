@@ -30,5 +30,5 @@ public:
 
     void print();
 
-    string gettypeName();
+    string getTypeName();
 };
