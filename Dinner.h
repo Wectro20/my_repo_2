@@ -12,7 +12,7 @@ private:
 public:
 
     Dinner();
-    Dinner(int day, float time, int l);
+    Dinner(int day, float time, int lengh);
     ~Dinner();
 
     void findThemostExpensiveCandies(string name);
