@@ -41,7 +41,7 @@ void Candy::print() {
     std::cout << "\nprice " << price << std::endl;
     std::cout << "\ntype " << getTypeName();
 }
-string Candy::gettypeName() {
+string Candy::getTypeName() {
     switch (candyType) {
     case 0: return "BAR";
     case 1: return "BUTTON";
