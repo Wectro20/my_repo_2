@@ -11,7 +11,6 @@ Candy::Candy(string name, float mass, int amount, float price, type candytype)
     this->amount = amount;
     this->price = price;
 }
-Candy::~Candy() {};
 
 string Candy::get_name() {
     return name;
@@ -25,7 +24,6 @@ int Candy::get_amount() {
 float Candy::get_price() {
     return price;
 }
-
 
 void Candy::ate()
 {
