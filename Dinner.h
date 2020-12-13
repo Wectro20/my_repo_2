@@ -6,7 +6,7 @@ class Dinner
 private:
     int day;
     float time;
-    int l;
+    int lengh;
     Candy* arrayofcandy;
 
 public:
