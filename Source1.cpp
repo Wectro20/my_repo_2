@@ -4,53 +4,53 @@
 
 Dinner::Dinner() {}
 
-Dinner::Dinner(int day, float time, int l)
+Dinner::Dinner(int day, float time, int lengh)
 {
-    this->l = l;
+    this->lengh = lengh;
     this->day = day;
     this->time = time;
-    arrayofcandy = new Candy[l];
+    arrayofcandy = new Candy[lengh];
 
 }
 
 Dinner::~Dinner() {
-    delete[]arrayofcandy;
+    delete[]arrayOfCandy;
 }
 
 
-void Dinner::initcandysinarray(Candy candy, int i) {
+void Dinner::initCandysInArray(Candy candy, int i) {
     if (i <= l) {
-        arrayofcandy[i] = candy;
+        arrayOfCandy[i] = candy;
     }
 }
-Candy Dinner::getfromarraycandy(int i) {
+Candy Dinner::getFromArrayCandy(int i) {
     return arrayofcandy[i];
 }
 
-void Dinner::findthemostexpensivecandies(string name)
+void Dinner::findTheMostExpensiveCandies(string name)
 {
     Candy temp;
 
     int i, j, first;
 
-    for (i = l - 1; i > 0; i--)
+    for (i = lengh - 1; i > 0; i--)
     {
         first = 0;                
         for (j = 1; j <= i; j++)   
         {
-            if (arrayofcandy[j].get_price() < arrayofcandy[first].get_price())
+            if (arrayOfCandy[j].get_price() < arrayOfCandy[first].get_price())
                 first = j;
         }
-        temp = arrayofcandy[first];  
-        arrayofcandy[first] = arrayofcandy[i];
-        arrayofcandy[i] = temp;
+        temp = arrayOfCandy[first];  
+        arrayOfCandy[first] = arrayOfCandy[i];
+        arrayOfCandy[i] = temp;
     }
 
 
 
 
     for (int i = 0; i < 3; i++) {
-        std::cout << "\nCandy: " << arrayofcandy[i].get_name() << " ";
-        printf("%f\n", arrayofcandy[i].get_price());
+        std::cout << "\nCandy: " << arrayOfCandy[i].get_name() << " ";
+        printf("%f\n", arrayOfCandy[i].get_price());
     }
 }
